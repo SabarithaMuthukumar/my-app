@@ -1,0 +1,158 @@
+<!DOCTYPE html>`
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <title>sample</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <object width="400" height="400" data="Rain.mp4">
+
+    </object>
+    <!-- <embed> -->
+    <div>
+        <embed src="Rain.mp4">
+    </div>
+    <!-- iframe -->
+
+    <div style="width: 100%; ">
+        <h1>iframe</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250646.96827152415!2d76.82714837490758!3d11.01167749112608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1579249782985!5m2!1sen!2sin"
+            width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+    <!-- <param> -->
+
+
+    <!-- picture -->
+    <picture>
+        <h1>PICTURE</h1>
+        <source media="(min-width: 650px)" srcset="img/img_pink_flowers.jpg">
+        <source media="(min-width: 465px)" srcset="img/img_white_flower.jpg">
+        <img src="img/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <!-- canvas -->
+    <div>
+        <h1>CANVAS</h1>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        </canvas>
+    </div>
+
+    <!-- del ins -->
+
+    <div>
+        <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+    </div>
+
+    <!-- table -->
+    <table>
+        <h1>TABLE</h1>
+        <caption>Monthly savings</caption>
+        <colgroup>
+            <col style="background-color:#c94414cf;">
+            <col span="2" style="background-color:#dca239;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th colspan="3" style="background-color: aqua;">The table header</th>
+            </tr>
+
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3476896</td>
+                <td>My first HTML</td>
+                <td>$53</td>
+            </tr>
+            <tr>
+                <td>5869207</td>
+                <td>My first CSS</td>
+                <td>$49</td>
+            </tr>
+        </tbody>
+        <tfoot style="text-align:center">
+            <tr>
+                <th>Totals</th>
+                <td colspan="2">21,000</td spa>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Button</h1>
+    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+    <!--datalist -->
+    <div>
+        <h1>DATALIST</h1>
+        <label for="ice-cream-choice">Choose :</label>
+        <input list="ice-cream-flavors" id="ice-cream-choice" />
+        <datalist id="ice-cream-flavors">
+            <option value="aaa">
+            <option value="bbb">
+            <option value="ccc">
+            <option value="ddd">
+        </datalist>
+    </div>
+    <!-- fieldset -->
+    <form>
+        <h1>fieldset</h1>
+        <fieldset>
+            <legend>Personalia:</legend>
+            Name: <input type="text"><br>
+            Email: <input type="text"><br>
+            Date of birth: <input type="text">
+        </fieldset>
+        
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+    </form>
+    <div>
+        <h1>METER</h1>
+        <meter id="fuel" min="0" max="100" low="20" high="66" optimum="80" value="15">
+            at 50/100
+        </meter>
+    </div>
+    <div>
+        <h1>optgroup</h1>
+        <select>
+            <optgroup label="Group 1">
+                <option>Option 1.1</option>
+            </optgroup>
+            <optgroup label="Group 2">
+                <option>Option 2.1</option>
+                <option>Option 2.2</option>
+            </optgroup>
+            <optgroup label="Group 3" disabled>
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+            </optgroup>
+        </select>
+    </div>
+</body>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.strokeText("Hello World", 10, 50);
+</script>
+
+</html>
